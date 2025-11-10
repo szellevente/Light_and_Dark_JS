@@ -12,6 +12,9 @@ function switchTheme() {
   navbar.classList.remove('navbar-light', 'bg-light')
   navbar.classList.add('navbar-dark', 'bg-dark')
  
+if (theme == false) {
+  
+}
 
   cards.forEach(card => {
     card.classList.add("text-white", "bg-dark", "border-light")
