@@ -10,6 +10,10 @@ function switchTheme() {
   const footerText = document.querySelector(".navbar-text")
   const h1Title = document.getElementById("h1_title")
   const sw = document.getElementById("themeSwitch")
+  const bottomtxt = document.getElementById("alsotext")
+  
+  bottomtxt.classList.remove('text-black', "bg-white", "border-light")
+  bottomtxt.classList.add('text-white', "bg-dark", "border-light")
   
 
   navbar.classList.remove('navbar-light', 'bg-light')
@@ -51,10 +55,13 @@ function switchTheme() {
   const footerText = document.querySelector(".navbar-text")
   const h1Title = document.getElementById("h1_title")
   const sw = document.getElementById("themeSwitch")
+  const bottomtxt = document.getElementById("alsotext")
 
   navbar.classList.add('navbar-light', 'bg-light')
   navbar.classList.remove('navbar-dark', 'bg-dark')
  
+  bottomtxt.classList.remove('text-white', "bg-dark", "border-light")
+  bottomtxt.classList.add('text-black', "bg-white", "border-dark")
 
   cards.forEach(card => {
     card.classList.remove("text-white", "bg-dark", "border-light")
